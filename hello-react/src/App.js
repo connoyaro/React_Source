@@ -21,9 +21,9 @@ function App() {
     </div>
   );
 }
-*/
-function App() {
-  
+
+//if 문 대신 조건부 연산자
+function App() {  
   const name = '리엑트1'
 
   return (
@@ -34,6 +34,24 @@ function App() {
       }
     </div>
   );
+}
+
+// AND 연사자(&&)를 사용한 조건부 렌더링
+function App() {  
+  const name = '리엑트'
+
+  return (   
+    <div>{name ==='리엑트' && <h1>리엑트 입니다.</h1>}</div>
+  );
+}
+*/
+
+function App() {  
+  const name = undefined;
+  //return name;
+  //return name || '값이 undefined입니다.';
+  return <div>{name}</div>; 
+  //return <div>{name || '리엑트'}</div>; 
 }
 
 export default App;
