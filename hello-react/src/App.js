@@ -1,5 +1,5 @@
 //import logo from './logo.svg';
-//import './App.css';
+import './App.css';
 /*
 function App() {
   return (
@@ -44,14 +44,47 @@ function App() {
     <div>{name ==='리엑트' && <h1>리엑트 입니다.</h1>}</div>
   );
 }
-*/
+
 
 function App() {  
   const name = undefined;
   //return name;
   //return name || '값이 undefined입니다.';
-  return <div>{name}</div>; 
-  //return <div>{name || '리엑트'}</div>; 
+  //return <div>{name}</div>; 
+  return <div>{name || '리엑트'}</div>; 
+}
+
+function App() {  
+  const name = '리액트';
+  const style = {
+    //background-color는 backgroundColor와 같이 -가 사라지고 카멜 표기법으로 작성된다.
+    backgroundColor: 'black',
+    color: 'aqua',
+    fontSize: '48px', //font-size --> fontSize
+    fontWeight: 'bold', //font-weight --> fontWeight
+    padding: 16 //단위를 생략하면 px로 지정된다.
+  };
+  return (   
+    <div style={style}>{name}</div>
+  );
+}
+
+
+
+function App() {  
+  const name = '리액트';
+  return <div className="react">{name}</div>; 
+}
+*/
+
+function App() {  
+  const name = '리액트';
+  return (
+    <>
+      <div className="react">{name}</div>
+      <input></input>
+    </>
+  ); 
 }
 
 export default App;
