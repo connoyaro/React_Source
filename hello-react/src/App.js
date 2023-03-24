@@ -75,16 +75,31 @@ function App() {
   const name = '리액트';
   return <div className="react">{name}</div>; 
 }
-*/
 
-function App() {  
+function App() {
   const name = '리액트';
   return (
     <>
-      <div className="react">{name}</div>
+      <div className="react" //시작태그를 여러 줄로 작성하게 된다면 여기에 주석을 작성할 수 있다
+      >
+        {name}
+      </div>
       <input></input>
     </>
-  ); 
+  );
+}
+*/
+
+function App() {
+  const name = '리액트';
+  return (
+    <div>
+      <div className="react">{name}</div>
+      <h1>들여쓰기가 이상한</h1>
+      <h2>코드</h2>
+      <p>입니다.</p>
+    </div>
+  );
 }
 
 export default App;
