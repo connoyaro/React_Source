@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "classnames": "^2.3.2",
+    "immer": "^10.0.2",
     "styled-components": "^5.3.10"
   }
 }
